@@ -1,0 +1,8 @@
+uild:
+  docker:
+    web: Dockerfile
+  config:
+    REDIS_URL: 34.208.149.49
+    SERVER_PORT: 3000
+run:
+  web: python test1.py
