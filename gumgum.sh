@@ -9,11 +9,15 @@ cat $SPTH
 
 heroku container:login
 
-heroku create -a sidgumgum3
+echo "Logged into the container"
 
-heroku container:push web -a sidgumgum3
+heroku create -a sidgumgum
 
-heroku container:release web -a sidgumgum3
+echo "Application created"
+
+heroku container:push web -a sidgumgum
+
+heroku container:release web -a sidgumgum
 
 echo "Opening the browser"
 
