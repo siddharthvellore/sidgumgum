@@ -72,8 +72,8 @@ This is a take-home project assigned to Siddharth.
 
 1) The [drone.yml](https://github.com/vellore007/sidgumgum/blob/master/.drone.yml) file has this code appended at the bottom
 2) Grab the Slack webhook from the **Administration -> Applications -> Webhooks** page on your Slack Admin Workspace
-3) Attach the **webhook** to a channel of your choice.
-4) Insert these details on the script above.
+3) Attach the **webhook** to a channel of your choice
+4) Insert these details on the script above
 
 #### Code
 ``` yml

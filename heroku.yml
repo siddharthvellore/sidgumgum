@@ -2,7 +2,7 @@ build:
   docker:
     web: Dockerfile
   config:
-    REDIS_URL: 34.208.149.49
-    PORT: 3000
+    REDIS_URL: <INSERT THE URL>
+    PORT: <ENTER PORT NUMBER>
 run:
   web: python test1.py

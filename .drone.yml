@@ -3,8 +3,8 @@ pipeline:
     image: python
     environment:
        # I spun an ec2 ubuntu instance with Redis installed with an elastic IP
-      - REDIS_URL=34.208.149.49
-      - PORT=3000
+      - REDIS_URL= <INSERT URL>
+      - PORT= <ENTER PORT>
     commands:
     workspace:
       - cd /app
