@@ -1,0 +1,46 @@
+pipeline:
+  build:
+    image: python
+    environment:
+        # I use dj_database_url to specify my DB settings
+      - REDIS_URL=34.208.149.49
+      - PORT=3000
+    commands:
+    workspace:
+      base: /app
+      - cp . /app
+      - cd projectDir
+      - pip install --trusted-host pypi.python.org Flask Redis
+      - python test1.py
+
+    when:
+      branch: [ master ]
+      event: [push, pull_request] # trigger step on push and pull events
+
+    publish:
+	deploy:
+          heroku:
+            app: gumgum
+            force: true
+
+        when:
+        branch: [ master ]
+        event: [ push ] # step only triggers on push events
+services:
+  redis:
+    image: redis
+
+steps:
+- name: slack
+  image: plugins/slack
+  settings:
+    webhook: <https://hooks.slack.com/services/...>
+    channel: <your channel>
+    link_names: true
+    template: >
+      {{#success build.status}}
+        build {{build.number}} succeeded. Good job. <your email>
+      {{else}}
+        build {{build.number}} failed. Fix me please. <@channelname> <@someone>
+      {{/success}}
+
