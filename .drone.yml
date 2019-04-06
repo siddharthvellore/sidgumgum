@@ -2,7 +2,7 @@ pipeline:
   build:
     image: python
     environment:
-       # I use dj_database_url to specify my DB settings
+       # I spun an ec2 ubuntu instance with Redis installed with an elastic IP
       - REDIS_URL=34.208.149.49
       - PORT=3000
     commands:
@@ -18,11 +18,13 @@ pipeline:
       event: [push, pull_request] # trigger step on push and pull events
 
     publish:
-	deploy:
-          heroku:
-            app: gumgum
-            force: true
-
+      image: plugins/docker
+      username: $DOCKER_USERNAME  # we will inject your dockerhub username using drone secrets.
+      password: $DOCKER_PASSWORD # we will inject your dockerhub password using drone secrets.
+      email:                     #provide email id
+      repo:                       #provide github repo
+      tag: latest
+      file: Dockerfile
         when:
         branch: [ master ]
         event: [ push ] # step only triggers on push events
