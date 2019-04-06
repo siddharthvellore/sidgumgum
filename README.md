@@ -1,6 +1,6 @@
 # Siddharth GUMGUM Assignment
 
-This is a take-home project assigned to Siddharth.
+This is a take-home project assigned assigned to Siddharth.
 
 ### Question: 1
 
