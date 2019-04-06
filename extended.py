@@ -4,8 +4,7 @@ from flask import Flask, jsonify, request
 from redis import Redis
 from redis import ConnectionError
 
-#34.208.149.49  //redis url
-REDIS_URL = "34.208.149.49" #os.getenv("REDIS_URL")
+REDIS_URL = os.getenv("REDIS_URL")
 
 app = Flask(__name__)
 redis = Redis(REDIS_URL)
