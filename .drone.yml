@@ -2,7 +2,7 @@ pipeline:
   build:
     image: python
     environment:
-        # I use dj_database_url to specify my DB settings
+       # I use dj_database_url to specify my DB settings
       - REDIS_URL=34.208.149.49
       - PORT=3000
     commands:
