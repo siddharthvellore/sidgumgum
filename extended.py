@@ -96,18 +96,18 @@ def set(key):
         raise ApiException(str(e))
 
 
-@app.route('/get/keys', methods=['GET'])
-def getallkeys():
+# @app.route('/get/keys', methods=['GET'])
+# def getallkeys():
 
-    #redis.flushdb()
-    print("method called")
-    values= []
-    keys = redis.keys('*')  
-    print("keys", keys)
-    for key in keys:
-        print ("key", key)
-        val = redis.get(key)
-        print("val", val)
+    # redis.flushdb()
+    # print("method called")
+    # values= []
+    # keys = redis.keys('*')  
+    # print("keys", keys)
+    # for key in keys:
+        # print ("key", key)
+        # val = redis.get(key)
+        # print("val", val)
 
     #     if val:
     #         val = val.decode('utf-8')
