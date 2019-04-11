@@ -27,7 +27,7 @@ This is a take-home project assigned assigned to Siddharth.
 9) ``` REDIS_URL ``` and ``` PORT ``` are declared as env variables.
 10) Check the container name & status by running this command ``` docker ps ```
 11) Tag the docker service by ``` docker latest caching-service:latest caching-service:latest ```
-13) Finally, push your image to the docker hub repository by running this command ``` docker push vellore007/caching-service ```
+13) Finally, push your image to the docker hub repository by running this command ``` docker push <username>/caching-service ```
 
 [Dockerfile](https://github.com/vellore007/sidgumgum/blob/master/Dockerfile)
 
