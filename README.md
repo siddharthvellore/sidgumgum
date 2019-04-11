@@ -110,6 +110,3 @@ steps:
 
 ## Contributing
 Pull requests are welcome.
-
-## License
-### *All images are served from my CloudFront and re-usage is strictly prohibited.*
