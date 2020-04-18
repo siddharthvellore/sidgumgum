@@ -59,7 +59,7 @@ This is a take-home project assigned assigned to Siddharth.
 2) Create a Git Webhook and add the Drone CI authentication token and payload URL ``` https://cloud.drone.io ``` **(grab token from the user settings page on Drone CI)** and create the action triggers. The below image describes the process.
 3) Create a [.drone.yml](https://github.com/vellore007/sidgumgum/blob/master/.drone.yml) file for all running dependencies to trigger a build step.
 
-![alt text](https://dfj1mwnen19ih.cloudfront.net/GitWebhooks.png)
+![alt text](https://sid-gumgum.s3-us-west-2.amazonaws.com/GitWebhooks.png)
 
 ### Question: 4
 
@@ -96,11 +96,11 @@ steps:
 
 **Please look for the images below**
 
-![alt text](https://dfj1mwnen19ih.cloudfront.net/RedisConnection.png)
+![alt text](https://sid-gumgum.s3-us-west-2.amazonaws.com/RedisConnection.png)
 
-![alt text](https://dfj1mwnen19ih.cloudfront.net/PostKey.png)
+![alt text](https://sid-gumgum.s3-us-west-2.amazonaws.com/PostKey.png)
 
-![alt text](https://dfj1mwnen19ih.cloudfront.net/GetKey.png)
+![alt text](https://sid-gumgum.s3-us-west-2.amazonaws.com/GetKey.png)
 
 
 
