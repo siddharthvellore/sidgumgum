@@ -11,6 +11,7 @@ This is a take-home project assigned to Siddharth.
 1) I prefer Ubuntu 16.04
 2) Docker
 3) Redis Cluster
+4) PEM key for Ec2 instances
 
 
 ### Installation
