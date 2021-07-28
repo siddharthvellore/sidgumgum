@@ -93,7 +93,7 @@ steps:
       {{/success}}
 ```
 
-# Testing the Heroku app connection alongside with ``` set ``` and ``` get ```
+[comment]: <> (# Testing the Heroku app connection alongside with ``` set ``` and ``` get ```)
 
 [comment]: <> (**Please look for the images below**)
 
