@@ -95,19 +95,10 @@ steps:
 
 # Testing the Heroku app connection alongside with ``` set ``` and ``` get ```
 
-**Please look for the images below**
+[comment]: <> (**Please look for the images below**)
 
-![alt text](https://sid-gumgum.s3-us-west-2.amazonaws.com/RedisConnection.png)
+[comment]: <> (![alt text]&#40;https://sid-gumgum.s3-us-west-2.amazonaws.com/RedisConnection.png&#41;)
 
-![alt text](https://sid-gumgum.s3-us-west-2.amazonaws.com/PostKey.png)
+[comment]: <> (![alt text]&#40;https://sid-gumgum.s3-us-west-2.amazonaws.com/PostKey.png&#41;)
 
-![alt text](https://sid-gumgum.s3-us-west-2.amazonaws.com/GetKey.png)
-
-
-
-
-
-
-
-## Contributing
-Pull requests are welcome.
+[comment]: <> (![alt text]&#40;https://sid-gumgum.s3-us-west-2.amazonaws.com/GetKey.png&#41;)
